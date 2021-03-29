@@ -1,36 +1,90 @@
-h1 {color: Orange; }
-h2 {color: yellow}
-h3 {color: white; }
-h4 {color: cyan}
-p {color: green}
-li {color: blue}
+@charset "UTF-8";
 body {
-    background-image: url(https://seanabney.github.io/Space_8.jpg);  background-repeat: no-repeat;  background-position: cover;  background-attachment: fixed;
-  }
+  font-family: Georgia, serif;
+  font-size: 100%;
+  background-color: white;
+}
+<! -- Sean Abney Unit 4 Appiled Assignemnt 2 3/21/2021--> 
+/* link styles */
+a:link, a:visited { color: #DC6903; }
+a:focus, a:hover, a:active { color: #F9AB33; }
+a {  text-decoration: none;  border-bottom: 1px dotted;}
+html {   box-sizing: border-box; } * { 	  box-sizing: inherit; padding-bottom: .2em; } 						
 
+/* header styles */
+header {
+  color: white;
+  background:  url(images/croissants_banner.jpg) no-repeat center center;
+  background-size: cover; 
+  text-align: center;
+}
+header p {
+  font-style: italic;
+  font-size: 1.2em;
+   height: 15em; 
+}
 
+/* nav styles */
+nav, footer {
+  font-family: verdana, sans-serif;
+  background-color: #783F27;
+}
+nav ul li a:link, nav ul li a:visited {
+  color: #F9AB33;
+}
+nav ul li a:focus, nav ul li a:hover, nav ul li a:active {
+  color: #fff;
+}
+nav ul li {
+  font-size: .8em;
+  text-transform: uppercase;
+  letter-spacing: .2em;
+}
 
+/* main "products" styles */
+main {
+  font-family: 'Stint Ultra Expanded',
+    cursive;
+  padding: 1em;  border: double 4px #EADDC4;
+  background-color: white;
+  line-height: 1.8em;
+  color: #555;
+  border-radius: 25px;
+}
+h3 {
+  text-transform: uppercase;
+  letter-spacing: .2em;
+  color: #7A0002;
+  border-top: 1px solid;   border-left: 3px solid;   padding-left: 1em;
+}
+p.more {
+  font-family: verdana, sans-serif;
+  text-transform: uppercase;
+  font-size: .8em;
+}
 
+/* aside "hours" styles */
+aside {
+  background: url(images/scallop.png) repeat-y left top;
+  background-color: #F6F3ED;
+  padding: 1em;  padding-left: 45px;
+  border-top-right-radius: 25px;
+}
+/* misc styles */
+footer {
+  color: #EADDC4;
+  text-align: center;
+  font-size: .8em;
+  padding: 1em;
+}
 h2 {
-  animation-duration: 3s;
-  animation-name: slidein;
-  nimation-iteration-count: infinite;
+  font-family: 'Stint Ultra Expanded', cursive;
+}
+.day {
+  color: #783F27;
+  font-family: verdana, sans-serif;
+  font-size: .8em;
+  text-transform: uppercase;
 }
 
-@keyframes slidein {
-  from {
-    margin-left: 100%;
-    width: 300%;
-  }
 
-  75% {
-    font-size: 300%;
-    margin-left: 25%;
-    width: 150%;
-  }
-
-  to {
-    margin-left: 0%;
-    width: 100%;
-  }
-}
