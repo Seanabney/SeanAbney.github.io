@@ -4,7 +4,6 @@ body {
   font-size: 100%;
   background-color: white;
 }
-<! -- Sean Abney Unit 4 Appiled Assignemnt 2 3/21/2021--> 
 /* link styles */
 a:link, a:visited { color: #DC6903; }
 a:focus, a:hover, a:active { color: #F9AB33; }
@@ -63,13 +62,6 @@ p.more {
   font-size: .8em;
 }
 
-/* aside "hours" styles */
-aside {
-  background: url(images/scallop.png) repeat-y left top;
-  background-color: #F6F3ED;
-  padding: 1em;  padding-left: 45px;
-  border-top-right-radius: 25px;
-}
 /* misc styles */
 footer {
   color: #EADDC4;
@@ -87,4 +79,39 @@ h2 {
   text-transform: uppercase;
 }
 
+h1 {color: Orange; }
+h2 {color: yellow}
+h3 {color: white; }
+h4 {color: cyan}
+p {color: green}
+li {color: blue}
+body {
+    background-image: url(https://seanabney.github.io/Space_8.jpg);  background-repeat: no-repeat;  background-position: cover;  background-attachment: fixed;
+  }
 
+
+
+
+h2 {
+  animation-duration: 3s;
+  animation-name: slidein;
+  nimation-iteration-count: infinite;
+}
+
+@keyframes slidein {
+  from {
+    margin-left: 100%;
+    width: 300%;
+  }
+
+  75% {
+    font-size: 300%;
+    margin-left: 25%;
+    width: 150%;
+  }
+
+  to {
+    margin-left: 0%;
+    width: 100%;
+  }
+}
